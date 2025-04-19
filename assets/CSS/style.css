@@ -59,3 +59,11 @@ body {
 a {
   text-decoration: none;
 }
+
+.L {
+  font-size: 48px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #a044ff, #ff4fc5, #6c63ff, #00cfff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

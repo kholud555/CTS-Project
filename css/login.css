@@ -1,0 +1,148 @@
+@font-face {
+  font-family: Resident;
+  src: url(../fonts/CSResident-Regular_demo-BF669f04c42aee3.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Resident;
+}
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to left, #211c34, #28243c);
+  overflow: hidden;
+}
+.container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container i {
+  position: absolute;
+  inset: 0;
+  border: 2px solid #fff;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.container i:nth-child(1) {
+  border-radius: 76% 24% 45% 55% / 50% 43% 57% 50%;
+  animation: animate 6s linear infinite;
+}
+.container i:nth-child(2) {
+  border-radius: 65% 35% 23% 77% / 55% 47% 53% 45%;
+  animation: animate 4s linear infinite;
+}
+.container i:nth-child(3) {
+  border-radius: 79% 21% 60% 40% / 31% 67% 33% 69%;
+  animation: animate2 10s linear infinite;
+}
+@keyframes animate {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+@keyframes animate2 {
+  0% {
+    rotate: 360deg;
+  }
+
+  100% {
+    rotate: 0deg;
+  }
+}
+.container:hover i {
+  border: 6px solid var(--clr);
+  filter: drop-shadow(0 0 20px var(--clr));
+}
+.container .login {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.container .login h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+.container .login .inputbx {
+  position: relative;
+  width: 100%;
+}
+.container .login .inputbx input {
+  position: relative;
+  width: 100%;
+  padding: 12px 20px;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  font-size: 1.5rem;
+  color: #fff;
+  box-shadow: none;
+  outline: none;
+  font-weight: 600;
+}
+.container .login .inputbx input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+.container .login .inputbx input[type="submit"] {
+  width: 110%;
+  color: #fff;
+  background: #02a9cc;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.container .login .inputbx input[type="submit"]:hover {
+  transform: scale(0.8);
+}
+.container .login .links {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.container .login .links a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+.container .login .links a:hover {
+  border-bottom: 2px solid #fff;
+}
+/*=======================================BREAKPOINTS======================================================*/
+/*FOR SMALL DEVICES */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 400px;
+    height: 440px;
+    transform: translate(25px, 0px);
+  }
+  .container .login {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .container {
+    width: 400px;
+    height: 440px;
+    transform: translate(0px, 0px);
+  }
+}

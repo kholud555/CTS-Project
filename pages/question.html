@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/question.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="NavLogo">
+          <a href="#">
+            <i class="ri-gamepad-line LogoImg"></i>
+          </a>
+          <a><span class="LogoName">Quiz Quest</span></a>
+        </div>
+  
+        <div class="NavSignIn">
+          <a href="#" class="NavLeaderboardPage">Leaderboard</a>
+          <a href="../pages/login.html" class="SingInBTN">Sign in</a>
+          <i class="ri-sun-line ThemeMode"></i>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="question-header">
+            <div class="question-number-container">
+                <p>Question</p>
+                <div class="question-number">
+                    <span class="current-question"></span>
+                    <span>/</span>
+                    <span class="total-questions"></span>
+                </div>
+            </div>
+            <div class="timer">
+                <i class="fa-regular fa-clock"></i> 
+                <span class="time"></span>   
+                <span class="time-unit">s</span>
+                <i class="timer-control fa-regular fa-circle-pause"></i>
+            </div>
+        </div>
+        <progress class="progress-bar" value="100" max="100"></progress>
+        <div class="question-container">
+            <div class="question-text">
+                <p>What is the capital of France?</p>
+            </div>
+           
+                <div class="option">
+                    <P></P>
+                </div>
+                <div class="option">
+                    <P></P>
+                </div>
+                <div class="option">
+                    <P></P>
+                </div>
+                <div class="option">
+                    <P></P>
+                </div>
+
+        </div>
+        <div class="question-footer">
+            <button class="next-button">Next <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+    </div>
+
+    <script src="../js/lib/timer.js"></script>
+    <script src="../js/question.js"></script>
+</body>
+</html>

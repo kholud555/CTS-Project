@@ -60,10 +60,66 @@ a {
   text-decoration: none;
 }
 
-.L {
-  font-size: 48px;
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+.NavLogo {
+  display: flex;
+  padding: 20px 15px;
+}
+.LogoImg {
+  display: inline-block;
+  margin: 0px 10px;
+  color: var(--button-color);
+  font-size: 30px;
+}
+.LogoImg:hover {
+  color: var(--Pink-icon-color);
+}
+.LogoName {
+  font-size: var(--title-font-size);
   font-weight: bold;
-  background: linear-gradient(90deg, #a044ff, #ff4fc5, #6c63ff, #00cfff);
+  background: var(--gradient-font-nav);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.NavSignIn {
+  padding: 20px 15px;
+}
+.NavLeaderboardPage {
+  font-size: 20px;
+  color: var(--first-text-color);
+  margin: 0px 35px;
+}
+.SingInBTN {
+  margin: 0px 35px;
+  background-color: transparent;
+  filter: blur(20);
+  border: 1px solid white;
+  padding: 5px 10px;
+  color: var(--first-text-color);
+  border-radius: 10px;
+  font-size: var(--normal-font-size);
+}
+.SingInBTN:hover {
+  background-color: var(--hover-color);
+}
+.NavLeaderboardPage {
+  font-weight: var(--font-medium);
+}
+.NavLeaderboardPage:hover {
+  color: var(--hover-color);
+}
+.ThemeMode {
+  padding: 10px;
+  margin: 0px 35px;
+  border: 1px solid rgba(255, 255, 255, 0.304);
+  border-radius: 50%;
+  color: #d8b119;
+}
+.ThemeMode:hover {
+  background-color: var(--hover-color);
 }

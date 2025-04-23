@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leaderboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="NavLogo">
+          <a href="#">
+            <i class="ri-gamepad-line LogoImg"></i>
+          </a>
+          <a><span class="LogoName">Quiz Quest</span></a>
+        </div>
+  
+        <div class="NavSignIn">
+          <a href="#" class="NavLeaderboardPage">Leaderboard</a>
+          <a href="../pages/login.html" class="SingInBTN">Sign in</a>
+          <i class="ri-sun-line ThemeMode"></i>
+        </div>
+      </nav>
+    <div class="w-screen h-screen relative">
+        <div class="absolute top-[35%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5/12">
+          <div class="flex items-center gap-3 mb-4">
+            <i class="fa-solid fa-trophy text-yellow-500 text-2xl"></i>
+            <h1 class="L text-3xl">Leaderboard</h1>
+          </div>
+          <div class="w-full border border-gray-700 p-4 rounded-lg">
+            <table class="w-full">
+                <thead class="text-center bg-black/15">
+                    <tr>
+                        <th class="p-2">#</th>
+                        <th>Name</th>
+                        <th>Score</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr>
+                        <td class="p-2"><i class="fa-solid fa-medal text-yellow-500"></i></td>
+                        <td>Islam</td>
+                        <td class="text-green-700">1/1</td>
+                        <td>2022-01-01</td>
+                    </tr>
+                    <tr>
+                        <td class="p-2"><i class="fa-solid fa-medal text-gray-400"></i></td>
+                        <td>Abdo</td>
+                        <td class="text-red-700">0/1</td>
+                        <td>2022-01-01</td>
+                    </tr>
+                    <tr>
+                        <td class="p-2"><i class="fa-solid fa-medal text-yellow-900"></i></td>
+                        <td>Kholoud</td>
+                        <td class="text-red-700">0/1</td>
+                        <td>2022-01-01</td>
+                </tbody>
+            </table>
+          </div>
+          <div class="flex items-center justify-center w-full gap-4 mt-6">
+            <button class="flex items-center gap-3 p-2 rounded-lg bg-purple-600">
+                <i class="fa-solid fa-house text-sm"></i>
+                <span class="return-to-home text-sm">Return to Home</span>
+            </button>
+          </div>
+        </div>
+    </div>
+    <script src="../js/leaderboard.js"></script>
+</body>
+</html>

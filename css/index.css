@@ -1,0 +1,183 @@
+.Home {
+    display: flex;
+    justify-content: center;
+    /* background: #02a9cc; */
+    padding: 60px 0px;
+    margin: 0px 120px;
+  }
+  .HomeIntro {
+    padding: 20px 0px;
+    width: 40%;
+    margin-right: 40px;
+  }
+  .HomeIntroTitle {
+    margin-top: 40px;
+    font-size: var(--biggest-font-size);
+    font-weight: var(--font-bold);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(
+      to right,
+      #9866d6 7%,
+      #e24fa4 63%,
+      #9866d6 84%
+    );
+  }
+  .HomeIntroParagraph {
+    margin: 20px 0px;
+    color: var(--second-text-color);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+  }
+  .ReadToPlay {
+    background-color: #22bb58;
+  }
+  .HomeIntroFeatures {
+    display: flex;
+    font-size: 15px;
+  }
+  .MultiCateguries,
+  .DifficultyLevels,
+  .Leaderboard {
+    padding: 10px;
+  }
+  .ri-brain-line {
+    color: var(--button-color);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-bold);
+  }
+  .ri-book-line {
+    color: var(--Pink-icon-color);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-bold);
+  }
+  .ri-medal-2-line {
+    color: #d8b119;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-bold);
+  }
+  .ReadToPlay {
+    background-color: #9368d91c;
+    backdrop-filter: blur(200px);
+    box-shadow: 0 0 4px #6e618452;
+    border: 1px solid #9368d952;
+    border-radius: 10px;
+    padding: 20px;
+    width: 35%;
+  }
+  .ReadToPlayTitle {
+    font-size: var(--title-font-size);
+    font-weight: var(--font-medium);
+    margin: 20px 0;
+  }
+  .LabelCategory {
+    display: block;
+    font-size: 15px;
+    color: var(--second-text-color);
+    margin: 10px 0px;
+  }
+  #Category {
+    width: 100%;
+    background-color: #e2e1e50f;
+    backdrop-filter: blur(200px);
+    border: 1px solid #9368d952;
+    border-radius: 5px;
+    padding: 10px;
+    color: var(--first-text-color);
+    outline: none;
+  }
+  option {
+    background-color: #211c34;
+    backdrop-filter: blur(200px);
+  }
+  .Levels {
+    display: flex;
+    justify-content: space-between;
+  }
+  .LabelDifficult {
+    display: block;
+    margin: 8px 0px;
+  }
+  
+  .LevelBorder {
+    display: flex;
+    border: 1px solid #9368d952;
+    border-radius: 9px;
+    padding: 5px 45px 5px 10px;
+    font-size: 15px;
+    margin: 10px;
+  }
+  .LevelBorder:hover {
+    backdrop-filter: blur(100px);
+  }
+  .EasyLabel {
+    color: var(--Easy-color);
+    font-weight: var(--font-bold);
+    cursor: pointer;
+  }
+  .MediumLabel {
+    color: var(--Medium-color);
+    font-weight: var(--font-bold);
+    cursor: pointer;
+  }
+  .HardLabel {
+    color: var(--hard-color);
+    font-weight: var(--font-bold);
+    cursor: pointer;
+  }
+  .StartQuizBTN {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0px;
+    border-radius: 15px;
+    color: var(--first-text-color);
+    background-color: var(--button-color);
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .ri-play-circle-line {
+    position: absolute;
+    bottom: 50px;
+    right: 160px;
+  }
+  .StartBTNQuiz:hover .ri-play-circle-line {
+    translate: 20px 0;
+  }
+  .StartBTNQuiz:hover .StartQuizBTN {
+    transform: scale(0.96);
+  }
+  .Custom-radio-BTN {
+    display: inline;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #9866d6;
+    border-radius: 50%;
+    margin-top: 2px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Custom-radio-BTN .Check-mark {
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    background-color: var(--button-color);
+    border-radius: 50%;
+    display: inline;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+  }
+  
+  .Custom-radio-BTN input {
+    display: none;
+  }
+  
+  .Custom-radio-BTN input:checked + .Check-mark {
+    opacity: 1;
+  }
+  

@@ -5,17 +5,7 @@
 :root {
   /*========== Colors ==========*/
   --background-color: linear-gradient(to left, #211c34, #28243c);
-  --gradient-font-nav: linear-gradient(
-    60deg,
-    #9866d6,
-    #e24fa4,
-    #379ac9,
-    #a166ab,
-    #5073b8,
-    #1098ad,
-    #07b39b,
-    #6fba82
-  );
+  --gradient-font-nav: linear-gradient(60deg, #9866d6, #e24fa4, #379ac9);
   --hover-color: #02a9cc;
   --button-color: #9368d9;
   --Pink-icon-color: #df4ea1;
@@ -81,6 +71,8 @@ nav {
 .LogoName {
   font-size: var(--title-font-size);
   font-weight: bold;
+  background: var(--gradient-font-nav);
+  background-clip: text;
   background: var(--gradient-font-nav);
   background-clip: text;
   -webkit-background-clip: text;

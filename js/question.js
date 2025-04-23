@@ -88,9 +88,10 @@ function renderDataToQuestionUI(){
 }
 
 function handleNextBtn(){
+    console.log("handleNextBtn called");
     elements.nextBtn.style.backgroundColor = "#46316f";
     if(currentQuestion == questions.length-1){
-        btn.innerText = "Show Result";
+        elements.nextBtn.innerText = "Show Result";
     }
   
 }

@@ -115,6 +115,7 @@ function moveToNextQuestion(){
     answerIsSelected = false;
     currentQuestion++;
     handleProgressBar(currentQuestion);
+    controlTimerIcon();
     if(currentQuestion < questions.length){
         timerInterval.restartTimer();
         handleQuestionUI();
@@ -169,6 +170,11 @@ function showCorrectAnswer(){
 
 function toggleTimer(){
     if(answerIsSelected) return;
+    controlTimerIcon();
+    timerInterval.toggle();
+}
+
+function controlTimerIcon(){
     if(timerInterval.getTimerState() ==="running"){
         elements.timerControl.classList.remove("fa-circle-pause");
         elements.timerControl.classList.add("fa-circle-play");
@@ -177,9 +183,7 @@ function toggleTimer(){
         elements.timerControl.classList.remove("fa-circle-play");
         elements.timerControl.classList.add("fa-circle-pause");
     }
-    timerInterval.toggle();
 }
-
 
 function timerCallback(){
     if(timerInterval.getTimerValue() < 0){
